@@ -1,0 +1,8 @@
+.profile_information_posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: .2em;
+  margin-bottom: 40px;
+}
+

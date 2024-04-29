@@ -1,0 +1,9 @@
+.load-button{
+  padding: 8px;
+  border: none;
+  margin-top: 15px;
+  border-radius: var(--border-rd-2);
+  width: 150px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}

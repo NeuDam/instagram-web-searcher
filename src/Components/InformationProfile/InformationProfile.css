@@ -1,0 +1,126 @@
+main{
+  width: 100%;
+  max-width: 97%;
+  margin-inline: auto ;
+}
+
+.main-1{
+  display: flex;
+  justify-content: space-between;
+  gap: .2em;
+}
+
+.main-2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  padding: 10px 5px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  & .basic-info-data{
+    text-align: center;
+    font-size: var(--text-sz-4);
+  }
+  
+}
+
+/* .main-1,.main-2{
+  background-color: var(--primary-color);
+  
+} */
+
+.profile_information_main{
+  width: 100%;
+  max-width: 95%;
+  margin-inline: auto;
+  margin-bottom: 30px;
+}
+
+.top-section-1{
+  width: 100%;
+  max-width: 35%;
+  text-align: center;
+}
+
+.profile_picture{
+  aspect-ratio: 1/1;
+  max-width: 85%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.name_profile{
+  margin: 0;
+  font-size: var(--text-sz-34);
+}
+
+.top-section-2{
+  width: 100%;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.bio_text{
+  text-align: center;
+  /* width: fit-content; */
+  max-width: 90%;
+  font-size: var(--text-sz-5);
+}
+
+.download-pic-button{
+  width: 90%;
+  margin-inline: auto;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background: var(--terciary-color);
+  border-radius: var(--border-rd-2);
+  margin-bottom: 5px;
+  & a{
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  main{
+    max-width: 90%;
+  }
+  .profile_picture{
+    max-width: 70%;
+  }
+  .name_profile{
+    font-size: var(--text-sz-34);
+  }
+  .bio_text{
+    font-size: var(--text-sz-4);
+  }
+  .download-pic-button{
+    width: 60%;
+  }
+  .top-section-2{
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  main{
+    max-width: 60%;
+  } 
+  .main-1, .main-2{
+    max-width: 80%;
+    margin-inline: auto;
+  }
+  .profile_picture{
+    max-width: 50%;
+  }
+  .download-pic-button{
+    width: 60%;
+    margin-bottom: 8px;
+  }
+}

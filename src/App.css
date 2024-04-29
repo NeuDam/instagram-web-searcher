@@ -1,0 +1,14 @@
+.warning-message{
+  font-size: var(--text-sz-34);
+  color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
+}
+
+.lock-image{
+  width: var(--text-sz-1);
+}
+
+.private-section{
+  text-align: center;
+}
