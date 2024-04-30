@@ -1,9 +1,18 @@
 .post{
+  position: relative;
   width: calc(100% / 3.1);
   height: 140px;
   border-radius: var(--border-rd-2);
   overflow: hidden;
   margin-bottom: .2em;
+}
+
+.post box-icon{
+  scale: 1;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 20;
 }
 
 .post:hover .media-post{
@@ -24,9 +33,14 @@
   .post{
     height: 260px;
   }
+  .post box-icon{
+    left: 8px;
+    scale: 1.5
+  }
 }
 @media screen and (min-width:1024px) {
   .post{
     height: 320px;
+    cursor: pointer;
   }
 }

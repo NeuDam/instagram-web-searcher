@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import 'boxicons'
+import 'swiper/css'
 import { ContextStateProvider } from './Context/ContextState.jsx'
 
 

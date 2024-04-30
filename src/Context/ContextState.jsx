@@ -12,6 +12,8 @@ export function ContextStateProvider({children}) {
   const [dataUser, setDataUser] = useState()
   const [showedPost, setShowedPost] = useState(12)
   const [loader, setLoader] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
+  const [dataPopup, setDataPopup] = useState()
   const ENDPOINT_CORS = 'https://lui2mi-corsanywhere.fly.dev'
 
   const fetchUser = async (username) => {
@@ -43,7 +45,11 @@ export function ContextStateProvider({children}) {
         ENDPOINT_CORS,
         showedPost,
         setShowedPost,
-        loader
+        loader,
+        showPopup,
+        setShowPopup,
+        dataPopup,
+        setDataPopup
     }}>
         {children}
     </Context.Provider>
