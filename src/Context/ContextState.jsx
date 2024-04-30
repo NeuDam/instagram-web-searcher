@@ -14,7 +14,7 @@ export function ContextStateProvider({children}) {
   const [loader, setLoader] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
   const [dataPopup, setDataPopup] = useState()
-  const ENDPOINT_CORS = 'https://lui2mi-corsanywhere.fly.dev'
+  const ENDPOINT_CORS = 'https://cors-anywhere-g6c9.onrender.com'
 
   const fetchUser = async (username) => {
     username = username.toLowerCase()

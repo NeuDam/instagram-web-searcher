@@ -20,12 +20,13 @@
   display: flex;
   flex-direction: column;
   border-radius: var(--border-rd-1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.21)
 }
 
 
 .swiper-cards{
   width: 75%;
-  height: 100%;
+  height: 160%;
 }
 
 .media-floater{
@@ -52,6 +53,7 @@
   background: transparent;
   border: none;
   & box-icon{
+    fill: var(--terciary-color);
     margin: 0;
     padding: 0;
   }
@@ -70,6 +72,71 @@
 }
 
 .text_post{
+  width: 85%;
+  margin-inline: auto;
+  text-align: center;
   max-height: 70px;
   overflow-y: auto;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.downloader_media_button{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 0;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--secondary-color) !important;
+}
+
+.date_post{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+  z-index: 2;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .floater-post{
+    width: 65vw;
+    height: 70vh;
+  }
+  .text_post{
+    max-height: 130px;
+    font-size: var(--text-sz-34);
+  }
+  .act_button_panel{
+    z-index: 5;
+    scale: 1.5;
+  }
+  .action_buttons{
+    display: flex;
+    gap: .9em;
+  }
+  .date_post{
+    font-size: var(--text-sz-34);
+  }
+  .downloader_media_button{
+    scale: 1.5;
+    right: 10px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .floater-post{
+    width: 30vw;
+    height: 80vh;
+  }
+  .act_button_panel{
+    cursor: pointer;
+  }
+  .action_buttons{
+    z-index: 15;
+  }
 }
