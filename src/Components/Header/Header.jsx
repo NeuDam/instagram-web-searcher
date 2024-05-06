@@ -20,7 +20,7 @@ function Header() {
           type="text" 
           className="username_input" 
           value={tempUsername} 
-          placeholder="Kyliejenner" 
+          placeholder="cristiano" 
           onChange={(e) => {
           setTempUsername(e.target.value)
           }} 

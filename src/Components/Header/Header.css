@@ -58,4 +58,7 @@
   .header{
     margin-bottom: 50px;
   }
+  .submit_button_username{
+    cursor: pointer;
+  }
 }
